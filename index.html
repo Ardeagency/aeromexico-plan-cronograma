@@ -169,6 +169,16 @@ h2.big{font-size:clamp(1.9rem,4.4vw,3.3rem)}
 .dates .it .k{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist);margin-bottom:6px}
 .dates .it .v{font-family:var(--font-display);font-size:1.12rem;color:#fff}
 
+.ins-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.ins{border:1px solid var(--line-d);border-radius:12px;padding:24px}
+.ins.full{grid-column:1/-1;border-color:var(--red);background:rgba(228,0,43,.07)}
+.ins h4{font-family:var(--font-display);font-weight:540;font-size:1.15rem;color:#fff;margin-bottom:12px}
+.ins ul{list-style:none}
+.ins li{font-size:.92rem;color:#c4d2ec;line-height:1.5;padding-left:18px;position:relative;margin-bottom:8px}
+.ins li::before{content:"+";position:absolute;left:0;color:var(--gold);font-weight:700}
+.ins-cta{display:inline-block;margin-top:16px;background:var(--red);color:#fff;font-weight:700;font-size:.86rem;text-decoration:none;padding:12px 22px;border-radius:30px;transition:transform .2s}
+.ins-cta:hover{transform:translateY(-2px)}
+@media(max-width:760px){.ins-grid{grid-template-columns:1fr}}
 footer{background:var(--navy-0);padding:50px 0;border-top:1px solid var(--line-d);text-align:center}
 footer .fl{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.2em;color:var(--red-soft);text-transform:uppercase}
 footer .fc{font-size:.78rem;color:var(--mist);margin-top:14px;line-height:1.8}
@@ -420,6 +430,34 @@ footer .conf{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.14em;
  </div>
 
  </div>
+ </div>
+</section>
+
+<!-- INSUMOS DE AEROMÉXICO -->
+<section class="dark block" id="insumos">
+ <div class="wrap">
+  <div class="rev">
+   <div class="board-tag"><span>Insumos de Aeroméxico</span><span class="gate">CHECKLIST</span></div>
+   <h2 class="big">Lo que necesitamos <em>de su lado</em></h2>
+   <p class="lede">Para cumplir las fechas, esto es lo que requerimos de Aeroméxico en cada momento. La identidad del embajador se define con el formulario del Brief.</p>
+  </div>
+  <div class="ins-grid rev">
+   <div class="ins full">
+     <h4>Para arrancar · Identidad del embajador (Punto 0)</h4>
+     <ul>
+       <li>Brief del Embajador completado (personaje, rostro, piel, vestuario, voz, escenarios)</li>
+       <li>Brandbook y key visuals de la marca</li>
+       <li>Logos, paleta de colores y tipografías</li>
+       <li>Guideline del uniforme (si el embajador lo usa)</li>
+       <li>Referencias visuales y de escenarios</li>
+     </ul>
+     <a class="ins-cta" href="https://ardeagency.github.io/aeromexico-brief-embajador/" target="_blank" rel="noopener">Completar el Brief del Embajador →</a>
+   </div>
+   <div class="ins"><h4>Producción de campo · México</h4><ul><li>Sede / sala y fecha del entrenamiento a grabar</li><li>Instructor o SME que se grabará</li><li>Permisos y accesos de grabación en sitio</li><li>Agenda del entrenamiento</li></ul></div>
+   <div class="ins"><h4>Video general (3 niveles)</h4><ul><li>Contenido del marco teórico por nivel (temas / guion de N1, N2 y N3)</li><li>Validación de cada nivel antes de avanzar</li><li>Puntos a reforzar en las cápsulas</li></ul></div>
+   <div class="ins"><h4>Roles y ceremonias</h4><ul><li>Confirmación de los 7 roles + el SMA</li><li>Guiones o contenidos fuente por rol</li><li>Listado de ceremonias del marco Agile</li></ul></div>
+   <div class="ins"><h4>Consejo y alta de proveedor</h4><ul><li>Fecha de la sesión de consejo</li><li>Comentarios consolidados en un solo documento</li><li>Documentos de alta de proveedor + contacto de compras</li></ul></div>
+  </div>
  </div>
 </section>
 
