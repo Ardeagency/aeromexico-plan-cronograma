@@ -44,7 +44,10 @@ nav .tag{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.24em;color
 @media(max-width:680px){nav .tag{display:none}}
 
 /* hero */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 0 60px;background:radial-gradient(120% 90% at 80% 10%,#12315c44,transparent 60%),linear-gradient(160deg,var(--navy-0),var(--navy-2))}
+.hero{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 0 60px;background:linear-gradient(160deg,var(--navy-0),var(--navy-2))}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(4,13,31,.72),rgba(11,35,67,.8) 55%,rgba(4,13,31,.9))}
+.hero .wrap{position:relative;z-index:2}
 .flight-strip{display:flex;gap:22px;flex-wrap:wrap;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mist);margin-bottom:30px}
 .flight-strip b{color:#fff}
 .hero h1{font-size:clamp(2.4rem,6vw,5rem);color:#fff;max-width:15ch}
@@ -186,6 +189,8 @@ footer .conf{font-family:var(--font-mono);font-size:.56rem;letter-spacing:.14em;
 
 <!-- HERO -->
 <header class="hero">
+ <video class="hero-bg" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true"><source src="assets/hero.mp4" type="video/mp4"></video>
+ <div class="hero-ov"></div>
  <div class="wrap">
  <div class="flight-strip">
  <span>PROYECTO <b>EMBAJADOR DIGITAL</b></span>
